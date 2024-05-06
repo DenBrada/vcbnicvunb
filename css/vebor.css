@@ -1,0 +1,342 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "JollyLodger";
+    src: url(../fonts/JollyLodger-Regular.ttf);
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-elloy: #FFFE05;
+    --color-seroe: #858585;
+}
+
+header>section{
+background: rgb(169,169,169);
+background: linear-gradient(0deg, rgba(169,169,169,1) 0%, rgba(77,94,115,1) 100%);
+    font-family: JollyLodger;
+    font-size: 66px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 20px 10vw;
+    justify-items: left;
+    align-items: end;
+    column-gap: 20px;
+}
+
+header>section img{
+    color: var(--color-white);
+    display: grid;
+    
+}
+
+header>section form input{
+    height: 50%;
+    width: 40vw;
+    display: grid;
+    align-items: center;
+    border: var(--color-white);
+   
+}
+
+header>section form{
+    display: grid;
+    grid-template-rows: 35px;
+    grid-template-columns: 40vw 30px;
+    background-color: var(--color-white);
+    align-items: center;
+    border-radius: 25px;
+    padding: 5px;
+    
+}
+
+header>section form svg{
+    display: grid;
+    align-items: center;
+
+}
+
+header>section div p{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+header>section div{
+    display: grid;
+    grid-template-columns: 30px 2fr ;
+    background-color: var(--color-elloy);
+    padding: 10px 100px;
+    border-radius: 25px;
+}
+
+
+main{
+    background-image: url(../images/wallpaperbetter\ 1.jpg);
+    /* width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: grid;
+    background-repeat: no-repeat; */
+    
+}
+
+
+
+main section.compani nav{
+    display: grid;
+    justify-items: center;
+    padding: 50px;
+}
+
+main section.compani nav ul{
+    list-style-type: none;
+    display: flex;
+    column-gap: 4vw;
+}
+
+main section.compani nav ul a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: Montserrat;
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+
+main section.clader{
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slider {
+    width: 1800px;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .slider-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slider-img.active {
+    opacity: 1;
+  }
+  
+  .slider img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .slider .prev {
+    left: 10px;
+  }
+  
+  .slider .next {
+    right: 10px;
+  }
+
+
+main section.game{
+    display: grid;
+    padding: 80px 10vw;
+    row-gap: 36px;
+    padding-bottom: 40px;
+}
+
+main section.game div.nahalo{
+    display: grid;
+    grid-template-columns: 80px 2fr;
+    justify-items: center;
+    justify-self: center;
+}
+
+main section.game h2{
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 35px;
+    padding: 10px;
+}
+
+main section.jopa {
+    padding: 0px 250px;
+}
+
+main section.jopa div#setka {
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main section.jopa div#setka div article {
+    background-color: var(--color-white);
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: center;
+    border-radius: 10px;
+}
+
+main section.jopa div#setka div article img {
+    border-radius: 10px;
+}
+
+main section.jopa div#setka div article div.names {
+    display: grid;
+    row-gap: 10px;
+    grid-template-rows: repeat(3, 20px);
+    align-self: center;
+    justify-items: center;
+}
+
+main section.jopa div#setka div article div.names {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main section.jopa div#setka div article.witcher {
+    grid-column: 2/2
+}
+
+main section.cnopka div{
+  display: grid;
+  background-color: var(--color-elloy);
+  padding: 20px 100px;
+  border-radius: 15px;
+  margin-left: 600px;
+  margin-right: 600px;
+  
+  
+}
+
+main section.cnopka div p {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+.checkbox-wrapper-46 input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .checkbox-wrapper-46 .cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+  .checkbox-wrapper-46 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 1px solid #9098a9;
+    transition: all 0.2s ease;
+  }
+  .checkbox-wrapper-46 .cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #506eec;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+  }
+  .checkbox-wrapper-46 .cbx span:last-child {
+    padding-left: 8px;
+  }
+  .checkbox-wrapper-46 .cbx:hover span:first-child {
+    border-color: #506eec;
+  }
+  
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+    background: #506eec;
+    border-color: #506eec;
+    animation: wave-46 0.4s ease;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  
+  @keyframes wave-46 {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+  
